@@ -3,43 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkyPlane - Best Flight Deals</title>
+    <title>SkyPlan Navbar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">SkyPlane</div>
-        <nav>
-            <a href="#">Help</a>
-            <a href="#">My Trips</a>
-            <button class="signup">Sign Up</button>
-            <button class="login">Log In</button>
-        </nav>
-    </header>
-    <main>
-        <div class="hero">
-            <img src="img/wallpaperflare.com_wallpaper.jpg" alt="Airport background" height="1000rem" >
-            <h1>Best deals are waiting for you</h1>
+    <nav class="navbar">
+        <div class="logo">SkyPlan</div>
+        <ul class="nav-links">
+            <li><span class="icon">❓</span> Help</li>
+            <li><span class="icon">✈️</span> My Trips</li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="sign-up">Sign Up</button>
+            <button class="log-in">Log In</button>
         </div>
-        <div class="search-box">
-            <div class="search-item">
-                <label>From</label>
-                <p>London Stansted</p>
+    </nav>
+    <div class="mid">
+        <h1>Best deals are waiting for you</h1>
+        <div class="booking-form">
+            <div class="form-item">
+                <p>From</p>
+                <h3>London Stansted</h3>
             </div>
-            <div class="search-item">
-                <label>To</label>
-                <p>Stockholm</p>
+            <div class="divider"></div>
+            <div class="form-item">
+                <p>To</p>
+                <h3>Stockholm</h3>
             </div>
-            <div class="search-item">
-                <label>Departure</label>
-                <p>10/06/2023</p>
+            <div class="divider"></div>
+            <div class="form-item">
+                <p>Departure</p>
+                <h3>10/06/2023</h3>
             </div>
-            <div class="search-item">
-                <label>Return</label>
-                <p>18/08/2023</p>
+            <div class="divider"></div>
+            <div class="form-item">
+                <p>Return</p>
+                <h3>18/08/2023</h3>
             </div>
-            <button class="search-btn">&#10140;</button>
+            <button class="search-btn">➡</button>
         </div>
-    </main>
+    </div>
 </body>
 </html>
