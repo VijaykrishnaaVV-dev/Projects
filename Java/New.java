@@ -5,17 +5,18 @@ import java.util.Scanner;
 public class New {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int n = in.nextInt();//input nth value to find 
-        int a = 0;//starting number 
-        int b = 1;//next number
-        int count = 2;//count start from 
-        while (count<=n) {//condition to nth number from user input
+        System.out.print("Enter the Fibocion number: ");
+        int n = in.nextInt();
+        int a = 0;
+        int b = 1;
+        int count = 2;
+        while (count < n) {  
             int temp = b;
-            b=a+b;//finding privous value
-            a=temp;//updating the value of a 
+            b = a + b;  // Correct Fibonacci formula
+            a = temp;
             count++;
-            System.out.println(b);
         }
+        System.out.println(count);
         in.close();
     }
 }
